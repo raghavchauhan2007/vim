@@ -4,7 +4,7 @@ local cmp_lsp = require('cmp_nvim_lsp')
 capabilities = vim.tbl_deep_extend('force', capabilities, cmp_lsp.default_capabilities())
 
 return {
-    cmd = { 'vtsls', '--stdio' },
+    cmd = { 'bunx', '--bun', 'vtsls', '--stdio' },
     filetypes = { 
         'javascript', 
         'javascriptreact', 
