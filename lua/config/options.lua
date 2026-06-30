@@ -10,3 +10,15 @@ vim.o.scrolloff = 8
 vim.o.showmode = false
 vim.o.guicursor = ""
 vim.o.undofile = true
+
+vim.diagnostic.config({
+  virtual_text = {
+    spacing = 4,
+    prefix = "●",
+    source = "if_many",
+  },
+  signs = true, 
+  underline = true, 
+  severity_sort = true,
+  update_in_insert = false, 
+})
