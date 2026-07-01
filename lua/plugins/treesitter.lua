@@ -4,14 +4,17 @@ return {
   lazy = false,
   build = ':TSUpdate',
 
-    config = function()
+  config = function()
 
-        local config = require("nvim-treesitter.configs")
+    local config = require("nvim-treesitter.configs")
 
-        config.setup ({
-            ensure_installed = {'c', 'java', 'python', 'lua', 'javascript', 'typescript', 'html', 'css'},
-            highlight = {enable = true},
-            indent = {enable = true}
-        })
-    end
+    config.setup ({
+      ensure_installed = {'c', 'java', 'python', 'lua', 'javascript', 'typescript', 'tsx', 'html', 'css'},
+      highlight = {enable = true},
+      indent = {
+        enable = true,
+        disable = {'javascript', 'typescript', 'tsx'}
+      }
+    })
+  end
 }
