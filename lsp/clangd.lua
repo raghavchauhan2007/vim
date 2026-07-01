@@ -6,6 +6,6 @@ capabilities = vim.tbl_deep_extend('force', capabilities, cmp_lsp.default_capabi
 return {
     cmd = { 'clangd' },
     root_markers = { '.clangd', 'compile_commands.json' },
-    filetypes = { 'h', 'c', 'c++', 'cpp' },
+    filetypes = { 'c', 'cpp' },
     capabilities = capabilities
 }
