@@ -1,4 +1,5 @@
 require('config.keymaps')
 require('config.options')
+require('config.netrw')
 require('config.lazy')
 require('config.lsp')
