@@ -16,7 +16,7 @@ vim.opt.cursorlineopt = 'number'
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣'}
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 vim.diagnostic.config({
   virtual_text = {
@@ -24,8 +24,8 @@ vim.diagnostic.config({
     prefix = "●",
     source = "if_many",
   },
-  signs = true, 
-  underline = true, 
+  signs = true,
+  underline = true,
   severity_sort = true,
-  update_in_insert = false, 
+  update_in_insert = false,
 })
