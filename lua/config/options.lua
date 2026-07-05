@@ -17,6 +17,10 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
 
 vim.diagnostic.config({
   virtual_text = {
