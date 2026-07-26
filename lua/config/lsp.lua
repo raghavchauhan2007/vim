@@ -1,1 +1,1 @@
-vim.lsp.enable({ 'clangd', 'vtsls', 'basedpyright', 'luals' , 'html', 'css', 'texlab' })
+vim.lsp.enable({ 'clangd', 'vtsls', 'basedpyright', 'luals' , 'html', 'css', 'texlab', 'tailwindcss' })
